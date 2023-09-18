@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-commerce site</title>
+        <link rel="shortcut icon" href="./img/fev-icon.png" type="image/x-icon">
+        <!-- fontawesome links -->
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" >
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+        <!-- bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <!-- flag icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+        <!-- my style css -->
+        <link rel="stylesheet" href="./css/EC-page2.css">
+    </head>
+<body>
+    <section class="header position-fixed w-100 z-3 top-0">
+    <header  >
+        <div class="container">
+            <p>Free shipment from $200</p>
+            <p>FREE 30 DAY RETURNS ON YOUR ORDERS</p>
+        </div>
+    </header>
+
+            <!-------------------- start header bootstrap--------------->
+
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3  ">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo-black.svg" class="black me-3"  width="45px" height="35px" alt="logo pic"> <span>E-</span>Shop
+                </a>
+            
+                <div class="collapse navbar-collapse order-3 order-lg-0" id="navbarNavAltMarkup">
+                    <div class="navbar-nav  mx-auto gap-5 text-black">
+                        <a class=" nav-link order-4 order-lg-0  " data-bs-toggle="collapse" href="#men" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Men
+                        </a>
+                        <a class="nav-link text-black" href="#">Women</a>
+                        <a class="nav-link text-black" href="#">Kids</a>
+                    </div>
+                </div>
+                
+                <!-- Button trigger modal -->
+                <div class="icons d-flex gap-3 order-2 order-lg-0">
+                
+                    <button type="button" class="btn ">
+                        <i class="fa-regular fa-magnifying-glass"></i>
+                    </button>
+                    
+                    <button class="btn cartBtn " type="button" data-bs-toggle="collapse" data-bs-target="#cart" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa-regular fa-cart-shopping"></i>
+                        <div class="number">0</div>
+                    </button>
+
+                    <button type="button" class="btn hide   d-sm-none d-lg-inline-block" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                        <i class="fa-light fa-user"></i>
+                    </button>
+
+                    <button class="btn navbar-toggler border-0 respon " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"  >
+                        <i class="fa-regular fa-bars"></i>
+                    </button>
+                </div>
+
+                
+            </div>
+        </nav>
+
+        <div class="collapse " id="men">
+            <div class="card card-body d-flex flex-row  justify-content-center  ">
+                <div class="sals list ">
+                    <p>Sale</p>
+                    <p>Bestsellers</p>
+                    <p>Latest Arrivals</p>
+                </div>
+                <div class="Shoes list">
+                    <p>SHOSE</p>
+                    <div class="shoes links ">
+                        <a href="">Lifestyle</a>
+                        <a href="">Running</a>
+                        <a href="">Soccer</a>
+                        <a href="">Basketball</a>
+                        <a href="">Football</a>
+                        <a href="">Golf</a>
+                        <a href="">Baseball</a>
+                    </div>
+                </div>
+                <div class="Clothing list">
+                    <p>CLOTHING</p>
+                    <div class="Clothing links ">
+                        <a href="">Pants</a>
+                        <a href="">Hoodies & Sweatshirts</a>
+                        <a href="">Jackets & Vests</a>
+                        <a href="">Track Suits</a>
+                        <a href="">Short Sleeve Shirts</a>
+                        <a href="">T-Shirts</a>
+                        <a href="">Jerseys</a>
+                        <a href="">Shorts</a>
+                        <a href="">Jeans</a>
+                    </div>
+                </div>
+                <div class="Accesorries list">
+                    <p>ACCESORRIES</p>
+                    <div class="Accesorries links ">
+                        <a href="">Backpacks</a>
+                        <a href="">Caps & Hats</a>
+                        <a href="">Watches</a>
+                        <a href="">Belts</a>
+                        <a href="">Bags</a>
+                        <a href="">Wallets & Cases</a>
+                        <a href="">Scarves</a>
+                        <a href="">Glasses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- srart cart  -->
+    <div class="collapse" id="cart">
+        <div class="card card-body d-flex flex-row gap-5   py-5 ">
+            <div class="container">
+                <div class="cartHead">
+                    <p>Shopping Cart</p> 
+                    <div class="imgs">
+                        <img src="./img(2)/cart-img/cart-pic.svg" alt="this pic">
+                        <img src="./img(2)/cart-img/line-pic.svg" alt="this pic">
+                        <img src="./img(2)/cart-img/car-pic.svg" alt="this pic">
+                    </div>
+                </div>
+
+                <div class="cartbodylable">
+                    <div class="row head">
+                        <div class="col col-sm-3 col-md-4">
+                            <p>product</p>
+                        </div>
+                        <div class="col col-lg-1 ">
+                            <p>Color</p>
+                        </div>
+                        <div class="col col-lg-1">
+                            <p>Size</p>
+                        </div>
+                        <div class="col col-lg-2 ">
+                            <p>Ammount</p>
+                        </div>
+                        <div class="col col-sm-2 col-md-3 col-lg-4 ">
+                            <p>Price</p>
+                        </div>
+                    </div>
+                    <div class="row cartbody">
+                    </div>
+                </div>
+
+                <div class="cart-footer">
+                    <div class="back">
+                        <a href="">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <p>Continue Shopping</p>
+                        </a>
+                    </div>
+                    <div class="conten">
+                    <form action="">
+                        <input type="text" placeholder="Promo Code" >
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </form>
+                    <div class="total">
+                        <p>Total cost </p>
+                        <p>$ <span class="cost">0</span></p>
+                    </div>
+                    <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!--------------------- end header bootstrap------------------>
+            
+
+    <!--------- start shap sec------ -->
+    <section class="shap p-3">
+        <div class="container ">
+            <div class="products ">
+                <div class="head-link ">
+                    <i class="fa-regular fa-house-chimney"></i>
+                    <p>/</p>
+                    <p>Men`s Tops</p>
+                    <p>/</p>
+                    <p>T-Shirt</p>
+                    <p>/</p>
+                    <p class="black">T-Shirt Summer Vibes</p>
+                </div>
+                <div class="imges ">
+                    <div class="small-img">
+                        <div class="box">
+                            <img src="./img(2)/T-shirt-img/whit.svg" class="white" alt="this pic">
+                        </div>
+                        <div class="box">
+                            <img src="./img(2)/T-shirt-img/black.svg" class="black" alt="this pic">
+                        </div>
+                        <div class="box">
+                            <img src="./img(2)/T-shirt-img/yallow.svg" class="yallow" alt="this pic">
+                        </div>
+                        <div class="box">
+                            <img src="./img(2)/T-shirt-img/blue.svg" class="blue" alt="this pic">
+                        </div>
+                    </div>
+                    <div class="big-img">
+                        <div class="bigbox">
+                            <img src="./img(2)/T-shirt-img/whit.svg" class="white" alt="this pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    <div id="carouselExampleIndicators" class="carousel slide ">
+        <div class="container">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="./img(2)/T-shirt-img/whit.svg" class="d-block w-100" alt="this pic">
+            </div>
+            <div class="carousel-item " >
+                <img src="./img(2)/T-shirt-img/black.svg" class="d-block w-100" alt="this pic">
+            </div>
+            <div class="carousel-item">
+                <img src="./img(2)/T-shirt-img/yallow.svg" class="d-block w-100" alt="this pic">
+            </div>
+            <div class="carousel-item">
+                <img src="./img(2)/T-shirt-img/blue.svg" class="d-block w-100" alt="this pic">
+            </div>
+        </div>
+    </div> 
+</div>
+
+            
+            <div class="content ">
+                <div class="delivery">
+                    <div class="slow">
+                        <img src="./img(2)/car1.svg"  alt="this pic">
+                        <div class="contentS ">
+                            <p class="dark">Standard shipment</p>
+                            <p class="lite">Free within 3-6 business days</p>
+                        </div>
+                    </div>
+                    <div class="fast ">
+                        <img src="./img(2)/car2.svg" alt="this pic">
+                        <div class="contentF">
+                            <p class="dark">Express delivery</p>
+                            <p class="lite">$35,00 available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sale">
+                    <p class="text">SALE</p>
+                    <p class="id">Product ID: <br><span>261311</span></p>
+                </div>
+                <p class="small-screen">HOUSE MY BRAND</p>
+                <p class="name-product">T-Shirt Summer Vibes</p>
+                <div class="prices">
+                    <div class="priceall">
+                        <p class="red">$<span class="price">89.99</span></p>
+                        <p class="white">$<span class="price">119.99</span></p>
+                    </div>
+                    <p>HOUSE MY BRAND</p>
+                </div>
+
+                <div class="colors-product">
+                    <p>Color:</p>
+                    <div class="colors">
+                    <div class="color"><span class="black"></span></div>
+                    <div class="color"><span class="yellow"></span></div>
+                    <div class="color"><span class="blue"></span></div>
+                    <div class="color"><span class="white"></span></div>
+                    </div> 
+                </div>
+
+                <div class="size">
+                    <p>Size:</p>
+                    <select name="select" class="selectSize">
+                        <option disabled selected hidden  >CHOOSE SIZE</option>
+                        <option>SM</option>
+                        <option>MD</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option >XXL</option>
+                    </select>
+                    <p class="meseg"></p>
+                </div>
+
+                <div class="quality">
+                    <p>Quantity:</p>
+                    <div class="btns">
+                    <div class="control">
+                        <span class="min">-</span>
+                        <span class="num">1</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <button class="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--------- end shap sec------ -->
+
+
+
+    <!--------- start opinions sec------ -->
+
+    <section class="opinions">
+        <div class="container">
+        <ul class="nav nav-pills mb-3  mt-5  justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Reviews (2)</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="Details">
+                    <img src="./img(2)/opinions-img/desc-img1.svg" alt="this pic">
+                    <h6>Details and product description</h6>
+                    <p>White Summer Vibes T-shirt in the uiKit line with a colorful print. <br>
+                        Made of jersey cotton. T-shirt fits perfectly with jeans, pants or shorts</p>
+                </div>
+                <div class="Material">
+                    <img src="./img(2)/opinions-img/desc-img2.svg" alt="this pic">
+                    <h6>Material(s) and care</h6>
+                    <div class="property">
+                    <p>Body: 98% COTTON - 2% ELASTANE</p>
+                    <img src="./img(2)/opinions-img/material-img.svg" alt="this pic">
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade back " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="opinion">
+                <img src="./img(2)/opinions-img/opinion-img.png" alt="">
+                <button>ADD OPINION</button>
+                </div>
+                <div class="review">
+                    <div class="person">
+                    <img src="./img(2)/opinions-img/review-img/review-pic1.svg" alt="this pic">
+                    <div class="content">
+                        <p class="name">John Doe</p>
+                        <img src="./img(2)/opinions-img/review-img/stars.png" alt="this pic">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                    </div>
+                    <div class="person">
+                    <img src="./img(2)/opinions-img/review-img/review-pic2.svg" alt="this pic">
+                    <div class="content">
+                        <p class="name">Eveline Gosok</p>
+                        <img src="./img(2)/opinions-img/review-img/stars.png" alt="this pic">
+                        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                    </div>
+                    <div class="person">
+                    <img src="./img(2)/opinions-img/review-img/review-pic3.svg" alt="this pic">
+                    <div class="content">
+                        <p class="name">Anne Okombo</p>
+                        <img src="./img(2)/opinions-img/review-img/stars.png" alt="this pic">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--------- end opinions sec------ -->
+
+
+
+    <!-- start product section -->
+    <section class="product">
+        <div class="container">
+        <div class="head">
+            <p>Selected just for you</p>
+            <button>SHOW MORE</button>
+        </div>
+        
+        <swiper-container class="mySwiper" init="false" pagination="false">
+            <swiper-slide class="first">
+                <img src="./img/product-img/broduct1.png "  alt="">
+                <p class="offer">-30%</p>
+                <div class="content">
+                    <p>T-Shirt Summer Vibes</p>
+                    <div class="priceall">
+                        <p class="red">$<span class="price">89.99</span></p>
+                        <p class="white">$<span class="price">119.99</span></p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/product-img/broduct2.png" alt="">
+                <div class="content">
+                    <p>Loose Knit 3/4 Sleeve</p>
+                    <div class="priceall">
+                        <p class="black">$<span class="price">119.99</span></p>
+                        
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/product-img/broduct3.png" alt="">
+                <div class="content">
+                    <p>Basic Slim Fit T-Shirt</p>
+                    <div class="priceall">
+                        <p class="black">$<span class="price">79.99</span></p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/product-img/broduct4.png" alt="">
+                <div class="content">
+                    <p>Loose Textured T-Shirt</p>
+                    <div class="priceall">
+                        <p class="black">$<span class="price">119.99</span></p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="first">
+                <img src="./img/product-img/broduct1.png "  alt="">
+                <p class="offer">-30%</p>
+                <div class="content">
+                    <p>T-Shirt Summer Vibes</p>
+                    <div class="priceall">
+                        <p class="red">$<span class="price">89.99</span></p>
+                        <p class="white">$<span class="price">119.99</span></p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/product-img/broduct2.png" alt="">
+                <div class="content">
+                    <p>Loose Knit 3/4 Sleeve</p>
+                    <div class="priceall">
+                        <p class="black">$<span class="price">119.99</span></p>
+                        
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/product-img/broduct3.png" alt="">
+                <div class="content">
+                    <p>Basic Slim Fit T-Shirt</p>
+                    <div class="priceall">
+                        <p class="black">$<span class="price">79.99</span></p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/product-img/broduct4.png" alt="">
+                <div class="content">
+                    <p>Loose Textured T-Shirt</p>
+                    <div class="priceall">
+                        <p class="black">$<span class="price">119.99</span></p>
+                    </div>
+                </div>
+            </swiper-slide>
+
+        </swiper-container>
+        <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+    
+        </div>
+    </section>
+
+    <!-- end product section -->
+
+    <!-- start subscribe sec -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="content">
+                <p>Subscribe to our newsletter and 
+                    receive exclusive offers every week
+                </p>
+    
+                <form action="">
+                    <input type="email" placeholder="Enter your email" name="email">
+                    <button>SUBSCRIBE</button>
+                </form>       
+            </div>
+        </div>
+    </section>
+
+    <!-- end subscribe sec -->
+
+    <!-- start footer sec -->
+    <section class="footer ">
+        <div class="container ">
+            <div class="content ">
+                <div class="row d-flex  w-auto h-auto mt-5">
+                    <div class="part-cont col-sm-12  col-lg-8 col-xl-6 ">
+                        <div class="logo ">
+                            <a href="">
+                                <img src="./img/logo-black.svg" alt="this pic">
+                                <span>E-</span>Shop
+                            </a>
+                        </div>
+                        <p class="text mt-5"> House My Brand designs clothing for the young, the old & <br> everyone in between – but most importantly, for the fashionable
+                        </p>
+                    </div>
+                    <div class="part-cont col-sm-4 col-lg-2 ">
+                        <div class="head">
+                            <p>Shopping online</p>
+                        </div>
+                        <div class="links ">
+                            <a href="">Order Status</a>
+                            <a href="">Shipping and Deliver</a>
+                            <a href="">Returns</a>
+                            <a href="">Payment Options</a>
+                            <a href="">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="part-cont col-sm-4  col-lg-2">
+                        <div class="head">
+                            <p>Information</p>
+                        </div>
+                        <div class="links">
+                            <a href="">Gift Card</a>
+                            <a href="">Find a store</a>
+                            <a href="">Newsletter</a>
+                            <a href="">Bacome a member</a>
+                            <a href="">Site feedback</a>
+                        </div>
+                    </div>
+                    <div class="part-cont col-sm-4  col-lg-12 col-xl-2">
+                        <div class="head">
+                            <p>Contact</p>
+                        </div>
+                        <div class="links">
+                            <a href="">store@uikit.com</a>
+                            <a href="">Hotline: +1 131 138 138</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="" ><i class="fa-brands fa-facebook-f "></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a> 
+            </div>
+        </div>
+    </section>
+
+    <!-- end footer sec -->
+
+
+    <!-- staet last sec -->
+    <section class="last">
+        <hr>
+        <div class="container">
+            <div class="rights">
+                <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end last sec -->
+
+
+
+
+
+
+    <!-- go up btn -->
+    <a href="#" class="btn goup position-fixed d-none end-0 bottom-0 me-5 z-3"
+    ><i class="fa-regular fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+            <!-------------< start Modal >-------------->
+
+<div class="modal fade " id="exampleModalToggle">
+    <div class="modal-dialog modal-dialog-centered w-25">
+        <div class="modal-content p-4">
+            <div class="modal-heade ms-auto">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-bod  text-center">
+                <div class="head">
+                    <h5 class="mb-4">Log in</h5>
+                    <p class="w-75 mx-auto mb-4">Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+            </div>
+            <form action="">
+                <input type="email" placeholder="E-mail" name="email" class="form-control mb-4"  required>
+                <div class="password ">
+                    <input type="password" placeholder="Password" name="password" id="password" class="form-control mb-4"  required>
+                    <i class="fa-sharp fa-solid fa-eye-slash show  " onclick="showHide()"></i>
+                </div>
+                <div class="check">
+                    <label> 
+                        <input type="checkbox"> Keep me signed in
+                    </label>
+                    <button class="btn border-0" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Forgot password?</button>
+                </div>
+                <div class="login-links mt-4">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                    <a href=""><img src="./img/gmail.svg" alt=""> Gmail</a>
+                </div>
+                <button type="submit" class="btn my-4  w-100 sign" >Sign in</button>
+
+                <div class="sign-up mb-4 mt-3">
+                    <a href="">Not a member yet?</a>
+                    <button class="btn border-0" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <div class="modal fade" id="exampleModalToggle2" >
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content p-4">
+                <div class="modal-heade ms-auto ">
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-bod  text-center">
+                    <div class="head">
+                        <h5 class="mb-4">Forgot your password?</h5>
+                        <p class="w-75 mx-auto mb-4">Enter your email or phone number  and recover your account </p>
+                    </div>
+                    <form action="">
+                        <input type="email" placeholder="E-mail" name="email" class="form-control mb-4"  required>
+                        <div class="lins">
+                            <div><hr></div>
+                            <p class="mt-1">OR</p>
+                            <div><hr></div>
+                        </div>
+                        <div class="phone">
+                            <input id="phone" type="tel" placeholder="Phone number" class="form-control mb-4 " required >
+                        </div>
+                        <button type="submit" class="btn my-4  w-100 sign" >Reset password</button>
+                    </form>
+                </div>
+
+                <div class="modal-foote">
+                    <button class="btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to sign in <i class="fa-regular fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="exampleModalToggle3" >
+        <div class="modal-dialog modal-dialog-centered w-25">
+            <div class="modal-content p-4">
+                <div class="modal-heade ms-auto">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-bod  text-center">
+                    <div class="head">
+                        <h5 class="mb-4">Create an account and 
+                            discover the benefits</h5>
+                        <p class="w-75 mx-auto mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard </p>
+                    </div>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="First Name"  class="form-control mb-4"  required>
+                    <input type="text" placeholder="last Name"  class="form-control mb-4"  required>
+                    <input type="email" placeholder="Email" name="email" class="form-control mb-4"  required>
+                    <input type="password" placeholder="Password" name="password" class="form-control mb-4"  required>
+                    <label class="label"> 
+                        <input type="checkbox" class="mt-2"> <p> I agree to the Google Terms of Service and
+                            Privacy Policy</p>
+                    </label>
+                    <button type="submit" class="btn my-4  w-100 sign" >Sign up</button>
+                    <div class="sign-up">
+                        <a href="">Are you already a member?</a>
+                    </div>
+                </form>
+
+                <div class="modal-foote">
+                    <button class="btn mt-4" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to sign in <i class="fa-regular fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------< end Modal >-------------->
+
+
+
+
+
+
+
+
+
+    <!-- flag icons -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+    </script>
+
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- my script js -->
+    <script src="./js/EC-page2.js"></script>
+</body>
+</html>
